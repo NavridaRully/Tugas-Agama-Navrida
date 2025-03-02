@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* import google font */
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 100%;
+            font-family: 'Open Sans', sans-serif;
+            color: #0f0f0f;
+            background-color: #fa9049;
+        }
+
+        /* header */
+        .header {
+            background-color: #e609da;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 10px;
+        }
+        .header img {
+            width: 150px;
+            border-radius: 150px;
+        }
+        .header span {
+            font-weight: bold;
+            font-size: 45px;
+            margin-right: 3400px;
+            color: #ffffff;
+        }
+        .header nav a {
+            margin: 0 10px;
+            color: rgb(252, 251, 251);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        /* navigasi */
+        nav {
+            background-color: #e609da;
+            font-size: 60px;
+            align-items: center;
+        }
+        nav a {
+            margin-right: 60px;
+            text-align: right;
+            padding: 30px;
+            display: inline-flex;
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0 10px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            justify-content: space-between;
+        }
+
+        nav button {
+           background: none;
+           border: none;
+           color :#ffffff;
+           cursor : pointer;
+           padding: 0;
+           font-size: inherit;
+           font-weight: bold;
+           text-align: right;
+        }
+
+        nav a.active,
+        nav a:hover {
+            background-color: #53034f;
+        } 
+
+        /* Hero Panel */
+        #hero {
+            background-image: url(background.jpg);
+            background-size: cover;
+            padding: 50px 20px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        #hero h1 {
+            margin-bottom: 600px;
+            font-size: 170px;
+            color: #7f16cf;
+        }
+        #hero img {
+            margin-right: 10px;
+            width: 650px;
+            height: auto;
+        }
+        #hero p {
+            margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 25px;
+        } 
+
+        .divider {
+            border: 0;
+            border-top: 1px solid #ffffff;
+            margin: 40px 0;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        /* entry */
+        .entry-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .entry {
+            width: 30%;
+            text-align: center;
+        }
+
+        .entry img {
+            width: 850px;
+            height: 850px;
+            object-fit: cover;
+            margin-bottom: 400px;
+        }
+        
+        .entry-text p {
+            width: 90%;
+            font-size: 55px;
+            color: #201702;
+            text-align: left;
+            line-height: 1.5;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 50px;
+        }
+
+        .entry-text a {
+            width: 90%;
+            font-size: 55px;
+            color: #201702;
+            text-align: right;
+            line-height: 1.5;
+            font-family: 'Times New Roman', Times, serif;
+            margin-left: 700px;
+        }
+
+        /* footer */
+        footer {
+            clear: both;
+            background-color: #e47ddf;
+            color: #080808;
+            margin-top: 100px;
+            text-align: left;
+            padding: 30px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="UPB.png" alt="Logo Universitas">
+        <span>NAVRIDA RULLY ANASTASYA</span>
+        <nav>
+            <a href="home.html">Home</a>
+            <a><button onclick="alert('Mohon maaf menu pada website NAVRIDA RULLY ANASTASYA Tidak Aktif'); window.location.href='UTS.html';">About</button></a>
+            <a><button onclick="alert('Mohon maaf menu pada website NAVRIDA RULLY ANASTASYA Tidak Aktif'); window.location.href='UTS.html';">News</button></a>
+            <a><button onclick="alert('Mohon maaf menu pada website NAVRIDA RULLY ANASTASYA Tidak Aktif'); window.location.href='UTS.html';">Shop</button></a>
+            <a><button onclick="alert('Mohon maaf menu pada website NAVRIDA RULLY ANASTASYA Tidak Aktif'); window.location.href='UTS.html';">Contact</button></a>
+        </nav>
+    </div>
+
+    <section id="hero">
+        <img src="navrida.jpeg" alt="">
+        <h1>Navrida Rully Anastasya</h1>
+    </section>
+    
+    <article>
+        <div class="entry-container">
+            <div class="entry">
+                <img src="Al-Qur'an.png" alt="Gambar 1">
+            </div>
+            <div class="entry-text">
+                <p>Agama Islam adalah agama monoteistik yang didirikan pada abad ke-7 di Semenanjung Arab oleh Nabi Muhammad SAW, yang dianggap sebagai rasul terakhir oleh umat Muslim. Islam mengajarkan bahwa Allah adalah Tuhan yang Maha Esa, tidak ada Tuhan selain Dia, dan bahwa seluruh umat manusia harus tunduk pada kehendak-Nya. Salah satu ajaran utama dalam Islam adalah Tauhid, yaitu keyakinan akan keesaan Tuhan. Al-Qur’an, kitab suci umat Islam, dianggap sebagai wahyu langsung dari Allah yang disampaikan melalui Malaikat Jibril kepada Nabi Muhammad. Selain itu, hadis-hadis, yaitu perkataan, perbuatan, dan ketetapan Nabi Muhammad, juga menjadi pedoman hidup yang penting bagi umat Islam. Islam mengajarkan bahwa kehidupan di dunia ini adalah ujian bagi setiap individu untuk mendapatkan kebahagiaan abadi di akhirat melalui amal baik, ibadah, dan pengabdian kepada Allah.
+                </p>
+                <br>
+                <br>
+                <a>Islam juga mengatur berbagai aspek kehidupan, mulai dari ibadah pribadi hingga hubungan sosial antar umat manusia. Lima rukun  
+                <a>Islam adalah kewajiban dasar bagi setiap Muslim, yang meliputi pengucapan syahadat sebagai pernyataan iman, shalat lima waktu  
+                <a>sebagai bentuk komunikasi langsung dengan Allah, zakat sebagai bentuk kepedulian terhadap sesama, puasa di bulan Ramadan sebagai 
+                <a>latihan pengendalian diri, dan haji ke Mekkah sebagai wujud ibadah yang harus dilaksanakan bagi yang mampu. Selain itu, ajaran Islam 
+                <a>mengedepankan nilai-nilai keadilan, kasih sayang, dan persaudaraan antar umat manusia. Islam mengajarkan untuk hidup dengan penuh 
+                <a>kedamaian, menghormati orang lain, serta menjaga keharmonisan dalam masyarakat. Secara keseluruhan, Islam adalah agama yang 
+                <a>mengutamakan keseimbangan antara kehidupan duniawi dan akhirat, dengan prinsip-prinsip moral yang tinggi yang menjadi dasar bagi 
+                <a>umatnya untuk menjalani kehidupan yang bermakna.  
+                </a>
+                </a>
+                </a>
+                </a>
+                </a>
+                </a>
+                </a>
+                </a>
+            </div>
+            <div class="entry">
+                <img src="Islam.webp" alt="Gambar 2">
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <p>312310328 - NAVRIDA RULLY ANASTASYA - TI.23.CA.1</p>
+    </footer>
+</body>
+</html>
